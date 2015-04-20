@@ -1,0 +1,28 @@
+{
+  "name": "test_helloWorld",
+  "version": "0.0.8",
+  "description": "helloworld",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisSheu/test_helloWorld.git"
+  },
+  "keywords": [
+    "helloWorld"
+  ],
+  "author": "ChrisSheu",
+  "bugs": {
+    "url": "https://github.com/ChrisSheu/test_helloWorld/issues"
+  },
+  "homepage": "https://github.com/ChrisSheu/test_helloWorld",
+  "readmeFilename": "README.md",
+  "gitHead": "81abe8ab8be592cd77dee209c39bcda69ae9f522",
+  "dependencies": {
+    "npm": "~1.4.9"
+  },
+  "devDependencies": {}
+}
