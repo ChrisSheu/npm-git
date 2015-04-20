@@ -2,11 +2,14 @@
   "name": "dir_watchdog",
   "version": "0.0.6",
   "description": "This is a directory watchdog tool.",
-  "main": "test.js",
+  "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ChrisSheu/npm-git/tree/dir_watchdog"
+  },
+  "scripts":{
+  "test": "test.js"
   },
   "keywords": [
     "directory",
@@ -18,7 +21,7 @@
   ],
   "author": "ChrisSheu",
   "bugs": {
-    "url": "https://github.com/ChrisSheu/npm-git/tree/dir_watchdog/issues"
+    "url": "https://github.com/ChrisSheu/npm-git/issues"
   },
   "homepage": "https://github.com/ChrisSheu/npm-git/tree/dir_watchdog",
   "dependencies": {
