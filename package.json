@@ -1,6 +1,6 @@
 {
   "name": "test_helloWorld",
-  "version": "1.0.0"
+  "version": "1.0.0",
   "description": "helloworld",
   "main": "index.js",
   "license": "MIT",
