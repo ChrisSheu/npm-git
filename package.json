@@ -1,6 +1,6 @@
 {
   "name": "test_helloWorld",
-  "version": "0.0.8",
+  "version": "1.0.0"
   "description": "helloworld",
   "main": "index.js",
   "license": "MIT",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChrisSheu/test_helloWorld.git"
+    "url": "https://github.com/ChrisSheu/npm-git"
   },
   "keywords": [
     "helloWorld"
   ],
   "author": "ChrisSheu",
   "bugs": {
-    "url": "https://github.com/ChrisSheu/test_helloWorld/issues"
+    "url": "https://github.com/ChrisSheu/npm-git/issues"
   },
-  "homepage": "https://github.com/ChrisSheu/test_helloWorld",
+  "homepage": "https://github.com/ChrisSheu/npm-git",
   "readmeFilename": "README.md",
   "gitHead": "81abe8ab8be592cd77dee209c39bcda69ae9f522",
   "dependencies": {
