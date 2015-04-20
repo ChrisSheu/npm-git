@@ -1,12 +1,10 @@
+var dw = require('./lib/dir_watchdog');
 
-var h = require('./lib/helloWorld');
-var t = require('./lib/test');
-
-/* NodeJs use CommonJS specification.
- *
- * This is a example to know how to use the module.
- *
+/* [dir_watchdog]
+ * This is a folder watchdog tool.
+ * Author :  ChrisSheu(cs1987717@gmail.com) Date: 2015/04/17
+ * Usage  :  https://github.com/ChrisSheu/npm_dir_watchdog
  */
 var app = exports = module.exports = {};
-exports.test = t;
-exports.hello = h;
+
+app.watchdog = dw.dir_watchdog;

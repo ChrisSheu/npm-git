@@ -1,34 +1,84 @@
-## test_helloWorld
+## dir_watchdog
 
 [![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JCT98Z2B5WMM8 "Donate once-off to this project using Paypal")
-![test_helloWorld version](https://img.shields.io/badge/test_helloWorld-1.0.0-red.svg)
+![npm version](https://img.shields.io/badge/npm-1.4.28-red.svg)
+![fs version](https://img.shields.io/badge/fs-0.0.2-lightgray.svg)
+![array-difference version](https://img.shields.io/badge/array--difference-0.0.1-yellow.svg)
+![readdirp version](https://img.shields.io/badge/readdirp-1.3.0-green.svg)
 
-* this is a example for test helloWorld.
+
+* This is a directory/folder watchdog tool.
 
 ## Overview
 
 * [Getting Started](#getting-started)
   - install
 * [Usage](#usage)
+* [Result](#result)
 * [License](#license)
 
 ## Getting Started
-   npm install test_helloWorld
+   npm install dir_watchdog
 
 ## Usage
-```javascript
-   var h = require('test_helloWorld');
-   h.hello.a();                        // hello world.
-   h.test.test();                     //  this is a test
-   h.hello.showmsg();           //  Not set
-   h.hello.setmsg('[test] hello world'); //your set msg to :[test] hello world
-   h.hello.showmsg();                       //[test] hello world
+```
+var dw = require('dir_watchdog');
+var option = new Object();
+option.rootpath = "./myfile";             //default path : "./"
+option.timer = 1000;                        //default : 2000 millionseconds detect.
+dw.watchdog(option, function(ret, files, dirs)
+{
+  //catch event msg.
+  switch(ret)
+  {
+      case "init":
+        showlog(ret, files, dirs);
+        break;
+      case "create":
+        showlog(ret, files, dirs);
+        break;
+      case "delete":
+        showlog(ret, files, dirs);
+        break;
+      case "change":
+        showlog(ret, files, dirs);
+        break;
+      default:
+        break;
+  }
+});
+function showlog(ret, files, dirs)
+{
+    console.log(ret);
+    console.log("=====files=====");
+    console.log(files);
+    console.log("=====directories=====");
+    console.log(dirs);
+}
 ```
 ## Result
-<div>
-<img src="https://github.com/ChrisSheu/npm-git/blob/master/docs/helloworld.PNG?raw=true" align="left|bottom" height="300" width="400">
+* init:
+<div> 
+<img src="https://github.com/ChrisSheu/npm-git/blob/dir_watchdog/docs/read.png?raw=true" align="left|bottom" height="150" width="600">
+</div>
+* create: ( hello file)
+<div> 
+<img src="https://github.com/ChrisSheu/npm-git/blob/dir_watchdog/docs/read.png?raw=true" align="left|bottom" height="150" width="600">
+</div>
+* delete: ( hello file)
+<div> 
+<img src="https://github.com/ChrisSheu/npm-git/blob/dir_watchdog/docs/read.png?raw=true" align="left|bottom" height="150" width="600">
+</div>
+* change[rename]: ( hello -> hello_rename file)
+<div> 
+<img src="https://github.com/ChrisSheu/npm-git/blob/dir_watchdog/docs/read.png?raw=true" align="left|bottom" height="150" width="600">
+</div>
+* change[move]:  ( ../myfile/hello_rename → ../myfile/test/hello__rename file)
+<div> 
+<img src="https://github.com/ChrisSheu/npm-git/blob/dir_watchdog/docs/read.png?raw=true" align="left|bottom" height="150" width="600">
 </div>
 
 ## License
 
-* SEE　[MIT](http://www.opensource.org/licenses/MIT)
+* SEE　[![Linence](https://img.shields.io/apm/l/vim-mode.svg)](http://www.opensource.org/licenses/MIT)
+
