@@ -19,10 +19,11 @@
     "url": "https://github.com/ChrisSheu/npm-git/issues"
   },
   "homepage": "https://github.com/ChrisSheu/npm-git",
-  "readmeFilename": "README.md",
-  "gitHead": "81abe8ab8be592cd77dee209c39bcda69ae9f522",
   "dependencies": {
     "npm": "~1.4.9"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "directories": {
+    "doc": "docs"
+  }
 }
