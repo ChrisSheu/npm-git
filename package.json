@@ -1,6 +1,6 @@
 {
   "name": "dir_watchdog",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "This is a directory watchdog tool.",
   "main": "index.js",
   "license": "MIT",
